@@ -1,4 +1,27 @@
-header{
-    font-size: 50px;
-    font-family: 'Staatliches', cursive; 
+@import url("framework.css");
+
+header {
+    font-size: 150px;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+}
+
+header>a {
+    text-decoration: none;
+    color: black;
+}
+
+header>a:hover {
+    color: red;
+}
+.color{
+    background: red;
+}
+.photo{
+    width: 200px;
+}
+@media (max-width: 960px){
+    .color{
+        /* display: none; */
+    }
 }
