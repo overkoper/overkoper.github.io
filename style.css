@@ -1,21 +1,40 @@
 @import url("framework.css");
-
+.logo{
+    margin-top: 1rem;
+    width: 30%;
+    height: auto;
+}
 header {
     font-size: 150px;
     font-family: 'Staatliches', cursive;
     text-align: center;
 }
-
-header>a {
+header>img{
+    width: 70%;
+    height: auto;
+}
+header>p>a {
     text-decoration: none;
     color: black;
 }
-
-header>a:hover {
-    color: red;
+header>p>a:hover {
+    color: rgb(189, 0, 0);
+}
+.name{
+    font-size: 60px;
+    
+    width: 100%;
+}
+.job{
+    font-size: 80px;
+    width:100%;
+    color: rgb(189, 0, 0);
 }
 .color{
     background: red;
+}
+.todo-pic{
+    border: 10px solid black;
 }
 .photo{
     width: 200px;
