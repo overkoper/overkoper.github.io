@@ -1,4 +1,7 @@
 @import url("framework.css");
+html{
+    scroll-behavior: smooth;
+}
 .logo{
     margin-top: 1rem;
     width: 30%;
@@ -30,14 +33,65 @@ header>p>a:hover {
     width:100%;
     color: rgb(189, 0, 0);
 }
+.description{
+    font-size:50px;
+    padding-bottom: 50px;
+}
 .color{
     background: red;
 }
 .todo-pic{
+    display: block;
     border: 10px solid black;
+    width:100%;
+
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "email photo linkedin"
+        "github photo facebook";  
 }
 .photo{
-    width: 200px;
+    grid-area: photo;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 10px 10px 10px;
+    background: blue;
+}
+.email{
+    grid-area: email;
+    background: red;
+    border-radius: 50%;
+}
+.github{
+    grid-area: github;
+    background: orange;
+    border-radius: 50%;
+}
+.linkedin{
+    grid-area: linkedin;
+    background: green;
+    border-radius: 50%;
+}
+.facebook{
+    grid-area: facebook;
+    background: #4893D8;
+    border-radius: 50%;
+}
+footer img{
+    width: 150px;
+    border-radius: 50%;
+}
+footer a{
+    place-self: center center;
+}
+footer img:hover{
+    background: white;
+    transition: all 500ms;
 }
 @media (max-width: 960px){
     .color{
