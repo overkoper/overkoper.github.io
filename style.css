@@ -5,6 +5,15 @@ html{
 .text{
     font-family: 'Staatliches', cursive;
 }
+.title{
+    text-align: center;
+    font-size: 100px;
+    padding-top: 150px;
+    color: rgb(189, 0, 0);; 
+}
+
+/* header */
+
 .logo{
     margin-top: 1rem;
     width: 30%;
@@ -25,6 +34,7 @@ header>p>a {
 }
 header>p>a:hover {
     color: rgb(189, 0, 0);
+    transition: all 500ms;
 }
 .name{
     font-size: 60px;
@@ -40,13 +50,13 @@ header>p>a:hover {
     font-size:50px;
     padding-bottom: 50px;
 }
-.color{
-    background: red;
-}
+
+/* projects */
+
 .todo-pic{
     display: block;
-    border: 10px solid black;
     width:100%;
+    border: 10px solid black;
     transition: all 500ms;
 }
 .todo-pic:hover{
@@ -54,6 +64,32 @@ header>p>a:hover {
     transform: scale(1.1);
     box-shadow: 10px 10px 30px black;
 }
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "project more quote";
+}
+.project{
+    grid-area: project;
+}
+.more{
+    grid-area: more;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 30px; 
+}
+.quote{
+    grid-area: quote;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 30px;
+}
+
+/* dół strony */
+
 footer{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -71,7 +107,7 @@ footer{
 }
 .email{
     grid-area: email;
-    background: red;
+    background: rgb(189, 0, 0);;
     border-radius: 50%;
 }
 .github{
@@ -90,7 +126,7 @@ footer{
     border-radius: 50%;
 }
 footer img{
-    width: 150px;
+    width: 10vw;
     border-radius: 50%;
 }
 footer a{
@@ -100,8 +136,115 @@ footer img:hover{
     background: white;
     transition: all 500ms;
 }
+@media (max-width: 1550px){
+    .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "project" 
+            "more" 
+            "quote";
+    }
+    .more{
+        grid-area: more;
+        text-align: center;
+        font-size: 80px;
+        padding-top: 50px; 
+    }
+    .quote{
+        grid-area: quote;
+        text-align: center;
+        font-size: 60px;
+        padding-top: 50px;
+    }
+}
 @media (max-width: 960px){
-    .color{
-        /* display: none; */
+    .more{
+        font-size: 60px;
+    }
+    .quote{
+        font-size: 40px;
+        padding-top:50px;
+    }
+    .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "project" 
+            "more" 
+            "quote";
+    }
+    .title{
+        font-size: 70px;
+        padding-top: 100px;
+    }
+    .talk-is-cheap{
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background: white;
+        font-size: 25px;
+        opacity: 0.6;
+        transition: all 500ms;
+    }
+    .talk-is-cheap:hover{
+        opacity: 1;
+    }
+}
+@media (max-width: 655px){
+    .mobile{
+        visibility: hidden;
+    }
+    .logo{
+        margin-top: 5px;
+        width: 50%;
+    }
+    header {
+        font-size: 100px;
+    }
+    header>img{
+        width: 100%;  
+    }
+    .job{
+        font-size: 70px;
+    }
+    .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "project" 
+            "more" 
+            "quote";
+    }
+    .talk-is-cheap{
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background: white;
+        font-size: 25px;
+        opacity: 0.6;
+        transition: all 500ms;
+    }
+    .talk-is-cheap:hover{
+        opacity: 1;
+    }
+    .more{
+        font-size: 40px;
+    }
+    .quote{ 
+        font-size: 25px;
+        padding-top:30px;
+    }
+    .title{
+        font-size: 50px;
+        padding-top: 50px;
     }
 }

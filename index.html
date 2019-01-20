@@ -8,48 +8,52 @@
     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
     <link href="reset.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+    <link href="framework.css" rel="stylesheet">
     <title>Piotr Kopczyński profile page</title>
 
 </head>
 
 <body class="row">
-    <img src="img/left-background.jpg" alt="left background" class="col2 m-col1 color">
-    <main class="row col8 m-col2">
+    <img src="img/left-background.jpg" alt="left background" class="col2 m-col1 mobile">
+    <main class="row col8 m-col2 small">
         <header class="col12 m-col4">
             <!-- logo i cytat -->
             <img src="img/logo.svg" alt="logo" class="logo">
             <p class="name">Piotr Kopczyński</p>
             <p class="job">frontend developer</p>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis omnis at commodi, quidem porro iste blanditiis maxime voluptatum placeat consectetur aspernatur recusandae distinctio ex dolores accusantium, sunt repellat eius a.</p>
+            <p class="description">Following Little Prince's example I never leave a question unanswered.
+            </p>
             <img src="img/html5-css-javascript-logos.png" alt="html5, css3 and js logos">
-            <p>Talk is cheap.<br> Show me the <a href="projects">code</a>.</p>
+            <p class="talk-is-cheap">Talk is cheap.<br> Show me the <a href="#link">code</a>.</p>
         </header>
-
-        <div class="row col12 m-col4">
+        <p class="text title" id="link">My projects</p>
+        <div class="col12 m-col4 container">
             <!-- galeria projektów -->
-            <div class="col4">
+            <div class="project">
                 <a href="https://github.com/overkoper/todo-list"><img src="img/todo.png" alt="todo-list aplication printscreen" class="todo-pic"></a>
             </div>
-            <div class="col4 text">
-                więcej
+            <div class="text todo-pic more">
+                Work in progress... More projects soon!
             </div>
-            <div class="col4">
-                cytat
+            <div class="text todo-pic quote">
+                "Measuring programming progress by lines of code is like measuring aircraft building progress by weight."
+                <br>- Bill Gates
             </div>
         </div>
+        <p class="text title">Contact me</p>
         <footer class="col12 m-col4">
             <!-- informacje kontaktowe -->
            
                 <img src="img/ryj.jpg" class="photo">
             
-                <a href="#"><img src="img/iconmonstr-email-13.svg" class="email"></a>
-                <a href="#"><img src="img/iconmonstr-linkedin-4.svg" class="linkedin"></a>
-                <a href="#"><img src="img/iconmonstr-github-1.svg" class="github"></a>
-                <a href="#"><img src="img/iconmonstr-facebook-4.svg" class="facebook"></a>
+                <a href="mailto:piotr.kopczynski7@gmail.com"><img src="img/iconmonstr-email-13.svg" class="email"></a>
+                <a href="https://www.linkedin.com/in/piotr-kopczy%C5%84ski-b22052177/"><img src="img/iconmonstr-linkedin-4.svg" class="linkedin"></a>
+                <a href="https://github.com/overkoper"><img src="img/iconmonstr-github-1.svg" class="github"></a>
+                <a href="https://www.facebook.com/piotr.kopczynski.127"><img src="img/iconmonstr-facebook-4.svg" class="facebook"></a>
             </ul>
         </footer>
     </main>
-    <img src="img/right-background.jpg" alt="right background" class="col2 m-col1 color">
+    <img src="img/right-background.jpg" alt="right background" class="col2 m-col1 mobile">
 </body>
 
 </html>
