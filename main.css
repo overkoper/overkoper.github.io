@@ -18,18 +18,21 @@
     min-height:50%;
 }
 .background-bottom h2 {
-    font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: 'Marcellus SC', serif;
     font-style: italic;
     font-size: 18px;
     font-weight: 600;
     padding-bottom: 5px;
 }
 .background-bottom h1 {
-    font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: "Alegreya Sans SC", sans-serif;
     font-size: 20px;
     font-weight: 800;
     color: grey;
     padding-bottom: 15px;
+}
+.background-bottom h1 span{
+    color: #6955ae;
 }
 header{
     height: 300px;
