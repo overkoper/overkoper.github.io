@@ -83,8 +83,16 @@ nav img:hover{
     padding: 20px 0 20px 0;
     border-top: 1px solid rgb(180, 180, 180);
 }
+main:last-child{
+    border-bottom: 1px solid rgb(180, 180, 180);
+}
 .tab span{
     font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 22px;
+    transition: 0.5s;
+}
+.tab:hover span{
+    color:#0194fc;
 }
 .down-arrow{
     width: 0; 
@@ -95,18 +103,40 @@ nav img:hover{
     transition: 0.5s;
 }
 .clicked{
-    border-top: 7px solid rgb(180, 180, 180);
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
+    border-top: 3px solid rgb(180, 180, 180);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
 }
 .content{
     height: 0;
+    font-family: 'Lato', sans-serif;
+    margin:10px 10px 10px 10px;
     overflow: hidden;
     transition: 0.5s;
 }
+.content li{
+    margin: 5px 0 5px 0;
+}
+.content img{
+    margin-right: 5px;
+}
+.content p{
+    padding-bottom: 5px;
+}
+.content blockquote{
+    font-style: italic;
+    padding-top: 20px;
+}
+.content a{
+    text-decoration: none;
+    color: black;
+}
+.content a span:hover{
+    border-bottom: 1px solid #6955ae;
+    color: #0194fc;
+}
 .expanded{
     height: 200px;
-    
 }
 @media (min-width: 480px){
     .container{
