@@ -75,6 +75,39 @@ nav img:hover{
 .email:hover{
     background-color: #0194fc;
 }
+
+/* main */
+.tab{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 20px 0;
+    border-top: 1px solid rgb(180, 180, 180);
+}
+.tab span{
+    font-family: "Alegreya Sans SC", sans-serif;
+}
+.down-arrow{
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgb(180, 180, 180);
+    transition: 0.5s;
+}
+.clicked{
+    border-top: 7px solid rgb(180, 180, 180);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+.content{
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.expanded{
+    height: 200px;
+    
+}
 @media (min-width: 480px){
     .container{
         max-width: 460px;
